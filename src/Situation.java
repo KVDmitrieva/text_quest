@@ -1,16 +1,21 @@
 public class Situation {
+     static int line;
     Situation [] direction;
+
     String text;
     String subject;
     int dhealth;
     int dmind;
     int dstrength;
-    public Situation (String subject, String text, int variants, int dk,int da,int dr) {
+   // direction=new Situation[1][variants];
+    public Situation (String subject, String text, int variants, int dh,int dm,int ds) {
         this.subject=subject;
         this.text=text;
-        this.dhealth = dk;
-        this. dmind =da;
-        this.dstrength=dr;
-        direction=new Situation[variants];
+        this.dhealth = dh;
+        this. dmind =dm;
+        this.dstrength=ds;
+        direction = new Situation[variants];
+
+
     }
 }
